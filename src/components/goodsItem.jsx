@@ -8,10 +8,16 @@ function GoodsItem(props) {
         addToBasket = Function.prototype,
     } = props;
 
+    const defImg = "https://i.postimg.cc/Gpx9qtpj/noImage.png";
+
+    const handleImageError = (event) => {
+        event.target.src = defImg;
+    }
+
     return (
         <div className="card" id={id}>
             <div className="card-image">
-                <img src={full_background} alt={name} />
+                <img src={full_background} onError={handleImageError} alt={name} />
                 <span className="card-title">{name}</span>
             </div>
             <div className="card-content">
