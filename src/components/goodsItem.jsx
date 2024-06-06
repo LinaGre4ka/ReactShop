@@ -21,7 +21,7 @@ function GoodsItem(props) {
                 <span className="card-title">{name}</span>
             </div>
             <div className="card-content">
-                <p>{description}</p>
+                {description ? <p>{description}</p> : <p>Описание отсутствует</p>}
             </div>
             <div className="card-action">
                 <button 
