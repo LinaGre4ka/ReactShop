@@ -68,12 +68,11 @@ code {
   box-shadow: 3px 3px 8px 5px rgb(255, 211, 130);
 }
 
-.card .card-title {
-  font-size: 0;
-}
 
-.card p{
+
+.card p, .card-title {
   font-size: 80%;
+  color: #000;
 }
 
 .card .card-action {

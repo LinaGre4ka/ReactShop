@@ -18,9 +18,9 @@ function GoodsItem(props) {
         <div className="card" id={id}>
             <div className="card-image">
                 <img src={full_background} onError={handleImageError} alt={name} />
-                <span className="card-title">{name}</span>
             </div>
             <div className="card-content">
+                <span className="card-title"><b>{name}</b></span>
                 {description ? <p>{description}</p> : <p>Описание отсутствует</p>}
             </div>
             <div className="card-action">
