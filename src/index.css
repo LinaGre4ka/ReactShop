@@ -135,6 +135,11 @@ code {
   font-size: 20px;
 }
 
+.basket-delete {
+  cursor: pointer;
+  color: orange;
+}
+
 #toast-container {
   top: 3rem !important;
   animation: fade-in 250ms ease-in-out;
